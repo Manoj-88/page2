@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>  
+    <main>
+        <div class="box" id="formContainer">
+            <button class="close-button" onclick="closeForm()"><img src="x-3-32.png"></button>
+            <div class="users">
+                <div class="user1">
+                    <img src="01.png">
+                    <div class="username"><a href="#" class="all" >tiffin walla</a></div>
+                </div>
+                <div class="user1">
+                    <img src="02.png">
+                    <div class="username"><a href="#" class="all">Master chef</a></div>
+                </div><div class="user1">
+                    <img src="03.png">
+                    <div class="username"><a href="#" class="all">Sreet vendor</a></div>
+                </div><div class="user1">
+                    <img src="04.png">
+                    <div class="username"><a href="#" class="all">RestroOwner</a></div>
+                </div>
+            </div>
+
+            <div class="lowerpart">
+                <div class="formbox">
+                    <h1 style="color:#FFA900;">New account</h1>
+                    <div class="content" style="color: white;">
+                        <p>Hii Foodie!!</p>
+                        <h1>Welcome to Samaadhaan</h1>
+                    </div>
+                    <div class="form">
+                        <div class="process-container">
+                            <div class="dotted-line"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+
+                        <form action="">
+                            
+                                <div class="input-container">
+                                <input type="text" id="user1" autocomplete="off" required class="text-input">
+                                <label for="Registration Number" class="label">Restaurant Name</label>
+                            </div>
+                            <div class="input-container">
+                                <input type="text" id="user1" autocomplete="off" required class="text-input">
+                                <label for="Owner full Name" class="label">Owner full Name</label>
+                            </div>
+                            <div class="input-container">
+                                <input type="text" id="user1" autocomplete="off" required class="text-input">
+                                <label for="Owner full Name" class="label">Phone No.</label>
+                            </div>
+                            
+                            <div class="facility"><input type="checkbox"id="manoj">
+                            <h5>Delivery facility available ?</h5></div>
+                        </form>
+                    </div>
+                    
+                   <button style="  background-color: white; width: 100%;
+                        height: 9%;
+                        border-radius: 50px;
+                        margin-top: 10px;
+                        color: #555; /* Greyish color */
+                        font-size: 16px; /* Bigger font size */
+                        font-weight: bold; " >Next</button>
+                    
+
+                </div>
+
+                <div class="imagebox">
+                    <img src="image01.png">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <button onclick="closeForm()">Toggle Form</button>
+<script>
+function closeForm() {
+            var formContainer = document.getElementById('formContainer');
+            formContainer.classList.add('hidden');
+        };
+    </script>
+</body>
+</html>
